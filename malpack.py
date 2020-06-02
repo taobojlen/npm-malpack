@@ -40,4 +40,4 @@ if __name__ == "__main__":
   malicious_packages = get_malicious_packages()
   print("Found {} malicious package advisories.".format(len(malicious_packages)))
   with open("malicious_packages.json", "w") as f:
-    json.dump(malicious_packages, f)
+    json.dump(malicious_packages, f, indent=4)
